@@ -7,18 +7,3 @@ RewriteRule ^(.*)$ http://www.ryansnyder.me/$1 [L,R=301]
 ## Redirect old ryansnyder.me urls to tumblr
 RewriteCond %{REQUEST_URI} !^(/|index.html|/css/custom.css)$
 RewriteRule ^(.*)$ http://ryansnyder.tumblr.com/$1 [R=301,L]
-
-## Yslow ##
-<IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/x-javascript application/x-httpd-php application/rss+xml application/atom_xml
-</IfModule>
-
-<IfModule mod_expires.c>
-  ExpiresActive on
-  ExpiresByType image/gif "access plus 1 month"
-  ExpiresByType image/jpeg "access plus 1 month"
-  ExpiresByType image/png "access plus 1 month"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresByType application/x-javascript "access plus 1 month"
-</IfModule>
