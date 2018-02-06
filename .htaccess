@@ -5,5 +5,5 @@ RewriteCond %{HTTP_HOST} ^.ryansnyder.me [NC]
 RewriteRule ^(.*)$ http://www.ryansnyder.me/$1 [L,R=301] 
 
 ## Redirect old ryansnyder.me urls to tumblr
-RewriteCond %{REQUEST_URI} !^(/|index.html|/css/custom.css)$
+RewriteCond %{REQUEST_URI} !^(/|index.html|/css/custom.css|/favicon-16x16.png|/favicon-32x32.png)$
 RewriteRule ^(.*)$ http://ryansnyder.tumblr.com/$1 [R=301,L]

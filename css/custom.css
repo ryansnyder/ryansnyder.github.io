@@ -1,7 +1,30 @@
+html {
+  background: url("https://farm8.staticflickr.com/7471/15997657911_2b0a870efa_b.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
-  background-color: #ddd;
-  color: #333;
+  background: transparent;
   padding: 2em;
+}
+.container {
+  background-color: #f0ede7;
+  color: #54301a;
+}
+@media(max-width:766px){
+  .container {
+    margin: 1em auto;
+    width: 95%;
+  }
+}
+@media(min-width:766px){
+  .container {
+    margin: 2em auto;
+    max-width: 1000px;
+    width: 80%;
+  }
 }
 h1, h2 {
   margin: 1em .5em;
@@ -11,8 +34,12 @@ p,ul,li {
   margin: 1em;
   line-height: 2em;
 }
-a {
+a:link, a:visited {
+  color: #cd6847;
   font-weight: bold;
+}
+a:active, a:hover {
+  text-decoration: underline; 
 }
 .vcenter {
   display: inline-block;
@@ -27,45 +54,4 @@ a {
 }
 .center {
   text-align:center;
-}
-.fa-twitter {
-  background-color: #55acee;
-  color: #fff;
-}
-.fa-facebook {
-  background-color: #3b5998;
-  color: #fff;
-}
-.fa-google-plus {
-  background-color: #dd4b39;
-  color: #fff;
-}
-.fa-instagram {
-  background-color: #54301a;
-  color: #fff;
-}
-.fa-flickr {
-  background-color: #0063dc;
-  color: #fff;
-}
-a.social i { 
-  font-size: 2.75em;
-  margin: 10px 30px;
-  padding-top: 11px;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  -moz-box-shadow: 0px 0px 2px #888;
-  -webkit-box-shadow: 0px 0px 2px #888;
-  box-shadow: 0px 0px 2px #888;
-}
-div.social {
-  margin-top: 1em;	
-  text-align: center;
-}
-.img-responsive {
-  margin-top: 1em;
 }
