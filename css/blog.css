@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans');
+body {
+  background-color: #f6f5f4;
+  text-rendering: optimizeLegibility;
+}
+body, h3, h4, h5, h6, h7,
+p, label, 
+input, input[type="text"], input[type="number"], login input[type="password"], 
+button, .ui-menu-item {
+  font-family: 'Open Sans', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #404549;
+}
+h1, h2 {
+  font-family: 'Hind', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;  
+}
+.center {
+  text-align: center !important;
+}
+.left {
+  text-align: left !important;
+}
+.right {
+  text-align: right !important;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-style: bold;
+}
+h1 {
+  margin: 10px 0;
+  padding: 5px 0;	
+} 
+h2 {
+  margin-top: 30px;	
+}
+p {
+  font-size: 14pt;
+}
+p.tagline {
+  font-style: italic;
+  margin: 50px 0;
+}
+p.post-date, p.img-text {
+  font-size: .8em;
+  font-style: italic;
+}
+p.post-date {
+  margin: 20px 0;  
+}
+p.img-text { 
+  margin-top: 5px;	
+}
+a,
+a:active,
+a:hover,
+a:visited {
+  color: #404549;	
+}
+.dotted,
+.dotted:active,
+.dotted:visited,
+a.dotted,
+a.dotted:active,
+a.dotted:visited,
+h1 a,
+h1 a:active,
+h1 a:visited,
+li a,
+li a:active,
+li a:visited,
+p a,
+p a:active,
+p a:visited {
+  border-bottom: 1px dotted #404549; 
+  color: #404549;	
+  cursor: pointer;
+  margin-bottom: 0px !important;
+  padding-bottom: -3px !important;
+  text-decoration: none;
+}
+a:hover,
+h1 a:hover,
+li a:hover,
+p a:hover {
+  background-color: #FBCE3F;
+  border-bottom: none !important;  
+}
+div.container {
+  margin-bottom: 100px;
+}
+div.blog-header {
+  margin: 30px 0;
+  text-align: center;
+}
+div.blog-header p {
+  font-style: italic;
+  margin-top: 10px;
+}
+div.avatar {
+  border-radius: 50%;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+div.avatar, div.avatar img {
+  width: 75px;
+  height: 75px;
+}
+div.img {
+  margin: 30px 0;
+}
