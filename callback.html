@@ -2,7 +2,10 @@
   console.log('begin');
   
   const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams);
+  
   const myParam = urlParams.get('myParam');
+  console.log(myParam);  
 
   function getParameterByName(name, url) {
     if (!url) url = window.location.href;
