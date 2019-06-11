@@ -37,6 +37,9 @@
         "code": p,
         "redirect_uri": "https://ryansnyder.me/callback.html"
       }    
+      console.log("=== SETTINGS ===");            
+      console.log(settings);
+      console.log("=== SETTINGS ===");
       $.ajax(settings).done(function (response) {
         console.log(response);
       });      
