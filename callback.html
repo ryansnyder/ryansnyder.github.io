@@ -9,7 +9,7 @@
   <body>
   
     <script>
-      console.log('begin');
+      console.log('begin grabbing code');
       
       function getParameterByName(name, url) {
         if (!url) url = window.location.href;
@@ -24,9 +24,10 @@
       var p = getParameterByName('code');
       console.log(p);
       
-      console.log('finished');
+      console.log('finished grabbing code');
       
 
+      console.log('begin oauth token exchange');
       var settings = {
         "type": "POST",
         "url": "https://admin.dev.carthook.com/oauth/token",
@@ -37,9 +38,9 @@
         "redirect_uri": "https://ryansnyder.me/callback.html"
       }    
       $.ajax(settings).done(function (response) {
-        console.log("== RESPONSE ==");
         console.log(response);
-      });
+      });      
+      console.log('finished oauth token exchange');      
     </script>  
   
     
