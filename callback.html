@@ -28,12 +28,9 @@
       
 
       console.log('begin oauth token exchange');
+      
+
       var settings = {
-        "method": "POST",
-        "headers": {
-          "crossDomain": true
-        },
-        "url": "https://admin.dev.carthook.com/oauth/token",
         "grant_type": "authorization_code",
         "crossDomain": true,
         "client_id": "5f16e868949262f1cdf1b0d9f06d2819",
@@ -48,6 +45,23 @@
         console.log(response);
       });      
       console.log('finished oauth token exchange');      
+      
+      
+         .ajax({
+            url: "https://admin.dev.carthook.com/oauth/token",
+            type: "POST",
+            crossDomain: true,
+            data: JSON.stringify(settings),
+            dataType: "json",
+            success: function (response) {
+                var resp = JSON.parse(response)
+                alert(resp.status);
+            },
+            error: function (xhr, status) {
+                alert("error");
+            }
+        });              
+              
     </script>  
   
     
