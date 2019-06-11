@@ -28,13 +28,13 @@
       
 
       var settings = {
-        "type": "GET",
+        "type": "POST",
         "url": "https://admin.dev.carthook.com/oauth/token",
         "grant_type": "authorization_code",
         "client_id": "5f16e868949262f1cdf1b0d9f06d2819",
         "client_secret": "OuRYYSUzcJc0XaSZ1KuMHoSuJQ7MrywHpYbCTyWP",
         "code": p,
-        "redirect_uri": "https://admin.dev.carthook.com/settings/apps/install"
+        "redirect_uri": "https://ryansnyder.me/callback.html"
       }    
       $.ajax(settings).done(function (response) {
         console.log("== RESPONSE ==");
