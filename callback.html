@@ -28,9 +28,13 @@
       
 
       console.log('begin oauth token exchange');
+      var contentType ="application/x-www-form-urlencoded; charset=utf-8";
+      if(window.XDomainRequest) //for IE8,IE9
+        contentType = "text/plain";
       var settings = {
         "method": "POST",
         "url": "https://admin.dev.carthook.com/oauth/token",
+        "contentType": contentType,
         "grant_type": "authorization_code",
         "client_id": "5f16e868949262f1cdf1b0d9f06d2819",
         "client_secret": "OuRYYSUzcJc0XaSZ1KuMHoSuJQ7MrywHpYbCTyWP",
