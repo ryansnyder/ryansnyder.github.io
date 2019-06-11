@@ -33,6 +33,9 @@
         contentType = "text/plain";
       var settings = {
         "method": "POST",
+        "headers": {
+                    'Access-Control-Allow-Origin': '*'
+        },
         "url": "https://admin.dev.carthook.com/oauth/token",
         "contentType": contentType,
         "grant_type": "authorization_code",
