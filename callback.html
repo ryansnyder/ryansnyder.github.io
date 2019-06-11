@@ -31,10 +31,11 @@
       var contentType ="application/x-www-form-urlencoded; charset=utf-8";
       if(window.XDomainRequest) //for IE8,IE9
         contentType = "text/plain";
+      
       var settings = {
         "method": "POST",
         "headers": {
-                    'Access-Control-Allow-Origin': '*'
+          crossDomain: true
         },
         "url": "https://admin.dev.carthook.com/oauth/token",
         "contentType": contentType,
