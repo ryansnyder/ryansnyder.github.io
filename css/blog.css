@@ -30,7 +30,7 @@ h1, h2 {
   font-style: bold;
 }
 h1 {
-  margin: 10px 0;
+  margin: .5em 0;
   padding: 5px 0;	
 } 
 h2 {
@@ -38,6 +38,7 @@ h2 {
 }
 p {
   font-size: 14pt;
+  margin-bottom: 1.5em;
 }
 p.tagline {
   font-style: italic;
@@ -58,6 +59,7 @@ a:active,
 a:hover,
 a:visited {
   color: #404549;	
+  font-weight: 600;
 }
 .dotted,
 .dotted:active,
