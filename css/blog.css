@@ -36,6 +36,11 @@ h1 {
 h2 {
   margin-top: 30px;	
 }
+@media(max-width:766px){
+  h1 {
+    font-size: 2em;
+  }
+}
 p {
   font-size: 14pt;
   margin-bottom: 1.5em;
