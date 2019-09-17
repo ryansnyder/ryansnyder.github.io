@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans|Montserrat');
 body {
   background-color: #f6f5f4;
   text-rendering: optimizeLegibility;
@@ -12,7 +12,7 @@ button, .ui-menu-item {
   color: #404549;
 }
 h1, h2 {
-  font-family: 'Hind', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;  
+  font-family: 'Montserrat', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;  
 }
 .center {
   text-align: center !important;
