@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Webpage">
+<html lang="en" itemscope itemtype="http://schema.org/Person">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -7,6 +7,10 @@
     <meta name="author" content="Ryan Snyder">
     <link rel="me" type="text/html" href="http://www.google.com/profiles/ryansnyder.me"/> 
     <link rel="canonical" href="http://ryansnyder.me" />
+
+    <!-- Schema.org markup (Google) -->
+    <meta itemprop="name" content="Ryan Snyder">
+    <meta itemprop="description" content="Ryan Snyder is a tech executive, product management consultant, and food enthusiast who lives in Portland, Oregon.">
   
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
     <link href="./css/blog.css" rel="stylesheet" />    
@@ -16,45 +20,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="blog-header">
-        <center>
-          <div class="avatar text-center">
-            <a href="https://twitter.com/ryansnyder"><img src="https://en.gravatar.com/userimage/1741460/766bebdd55a1c131ea73570f5e0eaca9.jpg?size=200"></a>
-          </div>
-        </center>
+      <div class="row header">
+        <div class="col-7 left"><h1 itemprop="name">Ryan Snyder</h1></div>
+        <div class="col-5 right links">
+          <span class=""><a href="./consulting">Consulting</a></span>
+          <span class=""><a href="./about">About</a></span>
+        </div>        
       </div>
-      
-      <h1>Hi, I'm <strong class="fn">Ryan Snyder</strong>.</h1>
-
-      <p>I am a <strong>tech executive</strong>, <strong>product management consultant</strong>, and <strong>food enthusiast</strong>.</p>
-
-      <p>I <a href="./do-important-work">consult with product management teams</a> in both enterprise and startup organizations to build product teams, define strategy, and to prioritize work that delivers customer value.</p>
-
-      <p>Formerly, I held lead and executive product roles at <a target="new" href="https://www.mozilla.org">Mozilla</a>, <a target="new" href="https://www.simple.com">Simple</a>, <a target="new" href="https://www.thunderhead.com">Thunderhead</a>, and <a target="new" href="https://www.carthook.com">CartHook</a>.</p>
-
-      <p>I've built a few startups too &mdash; I founded the Microsoft Certified Systems Engineer training platform <strong>Cram Session</strong> (acquired), co-founded the location-based service <strong>Shizzow</strong>, and founded the HIPAA-compliant food and symptom journal <strong>Tummy</strong>.</p>
-
-      <p>For my current side project, I write about and photograph making sausage and bacon from scratch at <a target="new" href="http://meatclub.in">Meat Club</a>.</p>
-
-      <p>You may find me on <a target="new" href="http://www.twitter.com/ryansnyder" rel="me" title="Ryan Snyder on Twitter">Twitter</a>, <a target="new" href="http://instagram.com/ryansnyder" rel="me" title="Ryan Snyder on Instagram">Instagram</a>, and <a target="new" href="http://www.linkedin.com/in/ryansnyder" rel="me" title="Ryan Snyder on LinkedIn">LinkedIn</a>.</p>
-
-      <p>I live in Portland, Oregon with my wife and daughter &mdash; they're the bee's knees.</p>
-
+      <div class="row">
+        <div class="col-sm-5 first-image center">
+          <img src="./images/ryan-quality.jpg" class="with-border" style="width: 100%;">
+        </div>
+        <div class="col-sm-7">
+          <h2>Hi, I'm <strong class="fn">Ryan Snyder</strong>.</h2>
+          <h3>I am a product strategy and management consultant.</h3>
+          <h3>I help leaders create a culture that enables product and engineering teams to do their best work.</h3>
+          <h3>I help clients take products to market.</h3>                    
+          <h3>I help product teams consistently ship features that deliver the most value for their customers.</h3>
+          <br />
+          <center><a href="./consulting"><button type="button" class="btn btn-lg btn-info">Let's work together</button></a></center>
+        </div>
+      </div>      
     </div>      
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-17772133-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+    <script src="./js/js.js"></script>
 
   </body>
 </html>

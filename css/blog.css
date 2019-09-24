@@ -1,18 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
 body {
   background-color: #f6f5f4;
   text-rendering: optimizeLegibility;
 }
 body, h3, h4, h5, h6, h7,
 p, label, 
-input, input[type="text"], input[type="number"], login input[type="password"], 
 button, .ui-menu-item {
   font-family: 'Open Sans', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
   color: #404549;
 }
 h1, h2 {
-  font-family: 'Montserrat', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;  
+  font-family: 'Lato', 'Open Sans', sans-serif;
+}
+h1, div.header h2 {	
+  font-weight: 700;
+  margin: .5em 0;
+  padding: 5px 0;
+}
+@media(max-width:766px){
+  h1 {
+    font-size: 2em;
+  }
+}
+h2 {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-top: 20px;
 }
 .center {
   text-align: center !important;
@@ -28,18 +46,6 @@ h1, h2 {
 }
 .bold {
   font-style: bold;
-}
-h1 {
-  margin: .5em 0;
-  padding: 5px 0;	
-} 
-h2 {
-  margin-top: 30px;	
-}
-@media(max-width:766px){
-  h1 {
-    font-size: 2em;
-  }
 }
 p {
   font-size: 14pt;
@@ -98,6 +104,30 @@ p a:hover {
 div.container {
   margin-bottom: 100px;
 }
+div.header {
+  margin-bottom: 30px;
+}
+div.header > div.links {
+  margin-top: 2em;
+} 
+div.header > div.links > span {
+  margin-left: 1em;
+} 
+@media(max-width:766px){
+  div.header > div.links > span {
+	font-size: .75em;
+  }
+  .first-image img {
+	margin-bottom: 30px;
+    width: 100%;	 
+  }
+}
+@media(min-width:766px){
+  .first-image img {
+	margin-bottom: 30px;
+    width: 550px;	 
+  }
+}
 div.blog-header {
   margin: 30px 0;
   text-align: center;
@@ -119,4 +149,38 @@ div.avatar, div.avatar img {
 }
 div.img {
   margin: 30px 0;
+}
+img {
+  margin-bottom: 10px;
+}
+img.with-border {
+  box-shadow: 0 0 3px #54301a;
+  border: 3px solid white;
+  overflow: hidden;
+  width: 100%;
+}
+img.logo {
+  margin: 15px;
+  width: 35%;
+}
+.number-circle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  background-color: #666;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+div.hide-mobile {
+  display: none;
+  margin-top: 40px;
+}
+@media(min-width:766px){
+  div.hide-mobile {
+    display: block;	
+  }
 }
